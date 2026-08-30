@@ -1,0 +1,29 @@
+# EditorConfig: the on-disk coding standard (IDE + `dotnet format` read this).
+# https://learn.microsoft.com/dotnet/fundamentals/code-analysis/code-style-rule-options
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{csproj,json,yml,yaml,md,props}]
+indent_size = 2
+
+[*.cs]
+# Microsoft Framework Design Guidelines — naming
+dotnet_naming_rule.interfaces_must_start_with_i.symbols = interface_types
+dotnet_naming_rule.interfaces_must_start_with_i.style = prefix_i
+dotnet_naming_rule.interfaces_must_start_with_i.severity = warning
+dotnet_naming_symbols.interface_types.applicable_kinds = interface
+dotnet_naming_style.prefix_i.required_prefix = I
+dotnet_naming_style.prefix_i.capitalization = pascal_case
+
+# Prefer language features this course teaches
+csharp_style_namespace_declarations = file_scoped:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
+csharp_style_expression_bodied_methods = when_on_single_line:silent
+dotnet_style_prefer_collection_expression = true:suggestion

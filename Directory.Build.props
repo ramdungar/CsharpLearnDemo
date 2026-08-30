@@ -1,0 +1,13 @@
+<Project>
+  <!--
+    Directory.Build.props is imported by every project under this folder.
+    Teams put shared rules here so you do not copy-paste the same PropertyGroup
+    into 20 csproj files (DRY at the repo level).
+  -->
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+</Project>

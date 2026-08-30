@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <!--
+      ImplicitUsings = C# 10 global usings (System, System.Linq, ...).
+      Nullable = C# 8 nullable reference types: the compiler warns when null can sneak in.
+      LangVersion latest = use the newest C# the installed SDK understands (C# 12 on .NET 8).
+    -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>CsharpLearnDemo</RootNamespace>
+    <AssemblyName>CsharpLearnDemo</AssemblyName>
+    <Description>
+      Start-to-end C# course: language versions, why features were added,
+      principles/standards, and interview practice — all as runnable examples.
+    </Description>
+  </PropertyGroup>
+
+</Project>
