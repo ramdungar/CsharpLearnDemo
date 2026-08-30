@@ -10,7 +10,7 @@ public sealed class ControlFlowLesson : ILesson
 {
     public string Key => "flow";
     public string Title => "Control flow";
-    public string Category => "fundamentals";
+    public string Category => "Fundamentals";
     public string Summary => "if/else, switch, loops, break/continue, and why later versions added patterns.";
 
     public void Run()

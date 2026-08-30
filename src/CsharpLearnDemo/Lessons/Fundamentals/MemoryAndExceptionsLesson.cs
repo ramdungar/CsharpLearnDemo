@@ -10,7 +10,7 @@ public sealed class MemoryAndExceptionsLesson : ILesson
 {
     public string Key => "memory";
     public string Title => "Memory, GC, and exceptions";
-    public string Category => "fundamentals";
+    public string Category => "Fundamentals";
     public string Summary => "Stack vs heap, boxing, IDisposable, using, throw/catch, and exception filters.";
 
     public void Run()

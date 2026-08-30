@@ -12,13 +12,16 @@ public sealed class CourseSmokeTests
     public void Catalog_has_unique_keys_and_expected_categories()
     {
         var lessons = LessonCatalog.All();
-        Assert.Equal(lessons.Count, lessons.Select(l => l.Key).Distinct().Count());
-        Assert.Contains(lessons, l => l.Category == "Fundamentals");
-        Assert.Contains(lessons, l => l.Category == "Versions");
-        Assert.Contains(lessons, l => l.Category == "Principles");
-        Assert.Contains(lessons, l => l.Category == "Interview");
-        Assert.Contains(lessons, l => l.Key == "csharp12");
-        Assert.Contains(lessons, l => l.Key == "solid");
+        var keys = lessons.Select(l => l.Key).ToList();
+        var categories = lessons.Select(l => l.Category).Distinct().ToList();
+
+        Assert.Equal(lessons.Count, keys.Distinct().Count());
+        Assert.Contains("Fundamentals", categories);
+        Assert.Contains("Versions", categories);
+        Assert.Contains("Principles", categories);
+        Assert.Contains("Interview", categories);
+        Assert.Contains("csharp12", keys);
+        Assert.Contains("solid", keys);
     }
 
     [Fact]

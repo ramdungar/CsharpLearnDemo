@@ -10,7 +10,7 @@ public sealed class MethodsLesson : ILesson
 {
     public string Key => "methods";
     public string Title => "Methods and parameters";
-    public string Category => "fundamentals";
+    public string Category => "Fundamentals";
     public string Summary => "Signatures, overloads, ref/out/in, params, and expression-bodied members.";
 
     public void Run()

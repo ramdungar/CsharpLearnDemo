@@ -10,7 +10,7 @@ public sealed class ObjectOrientedLesson : ILesson
 {
     public string Key => "oop";
     public string Title => "Object-oriented programming";
-    public string Category => "fundamentals";
+    public string Category => "Fundamentals";
     public string Summary => "Class, interface, inheritance, polymorphism, encapsulation, and composition.";
 
     public void Run()

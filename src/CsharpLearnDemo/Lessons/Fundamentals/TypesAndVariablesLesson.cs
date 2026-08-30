@@ -11,7 +11,7 @@ public sealed class TypesAndVariablesLesson : ILesson
 {
     public string Key => "types";
     public string Title => "Types, variables, and values";
-    public string Category => "fundamentals";
+    public string Category => "Fundamentals";
     public string Summary => "Value vs reference types, literals, conversions, var, and const/readonly.";
 
     public void Run()
